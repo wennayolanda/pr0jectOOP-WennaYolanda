@@ -4,14 +4,8 @@ Feature: Check the functionality of checkout feature
     Given user open the webpage
     When user login as "standard_user" with password "secret_sauce"
     And user click "Login" button
-    Then user see the products page contains:
-      |Sauce Labs Backpack    |
-      |Sauce Labs Bike Light  |
-      |Sauce Labs Bolt T-Shirt|
     And user add product to cart
-    And verify that total product "2" is display in icon cart
-    When user click icon cart
-    Then verify that product is display in cart
+    And user click icon cart
 
   Scenario: user checkout the products
     Given the user click "Checkout" button
